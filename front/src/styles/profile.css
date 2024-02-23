@@ -1,0 +1,92 @@
+.ContainerHeader {
+  background: #3c1f8a;
+  max-height: 300px;
+}
+.LogoButton {
+  background: transparent;
+  border: 0;
+  width: 8rem;
+  height: 5rem;
+  margin-top: 60px;
+}
+.form-id {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+
+  color: #fff;
+}
+
+.deleteButton {
+  border: none;
+  margin-top: 1rem;
+  padding: 0.675rem 1rem;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #c53030;
+
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+a {
+  text-align: center;
+  color: #d53f8c;
+  font-size: 1.25rem;
+
+  margin-top: 20px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #d53f8cb0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -160px;
+}
+
+.passwordTitle {
+  margin-top: 30px;
+  color: #000;
+}
+
+#submitButton {
+  border: 0;
+  background: #3c1f8a;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 217px;
+  height: 40px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .app {
+    margin-top: -150px;
+  }
+}
+
+@media (max-width: 720px) {
+  .app {
+    margin-top: 10px;
+  }
+  .form-id {
+    color: #000;
+  }
+
+  a {
+    margin-bottom: 20px;
+  }
+}

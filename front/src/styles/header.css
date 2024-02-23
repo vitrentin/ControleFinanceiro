@@ -1,0 +1,115 @@
+.ContainerHeader {
+  background: #3c1f8a;
+  max-height: 200px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ContentHeader {
+  max-width: 1120px;
+  width: 100%;
+  padding: 2rem 1rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ContentHeader div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.PageButton {
+  font-size: 1rem;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  border-radius: 0.25rem;
+  height: 3rem;
+  font-size: 1.15rem;
+
+  transition: filter 0.2s;
+}
+
+.PageButton:hover {
+  filter: brightness(0.9);
+}
+
+.Logout {
+  color: rgb(255, 0, 0);
+}
+
+.profile {
+  border: none;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  border-radius: 0.25rem;
+  height: 3rem;
+  font-size: 1.15rem;
+  margin-top: 50px;
+  transition: filter 0.2s;
+}
+
+.profile:hover {
+  cursor: pointer;
+  filter: brightness(0.96);
+}
+
+.profile p {
+  display: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.profile img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 1240px) {
+  .ContentHeader {
+    padding: 1rem 0.5rem 10rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .ContainerHeader{
+    max-height: 150vh;
+  }
+  .ContentHeader {
+    flex-direction: column;
+    padding: 1rem 0.5rem 4.5rem;
+
+  }
+
+  .ContentHeader div {
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .ContentHeader {
+    margin-top: 35px;
+    width: 300px;
+  }
+
+  .ContentHeader div {
+    justify-content: space-between;
+    /* padding: 0 20px; */
+    width: 100%;
+  }
+}

@@ -1,0 +1,134 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.Content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+
+  width: 100%;
+  max-width: 1120px;
+}
+.Image {
+  width: 350px;
+  height: 350px;
+  border-radius: 2rem;
+}
+.Text {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  margin-top: 100px;
+}
+
+.Section2 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.EmailField input {
+  border: 1px solid #98979b;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.EmailField input:focus {
+  outline: 0;
+}
+
+.PasswordField input {
+  border: 1px solid #98979b;
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.PasswordField input:focus {
+  outline: 0;
+}
+
+#submitButton {
+  border: 0;
+  background: #3c1f8a;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 217px;
+  height: 40px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.register {
+  margin-top: 10px;
+}
+
+.register a {
+  color: #3c1f8a;
+  margin-left: 6px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#user-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #3c1f8a;
+}
+
+.Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .Text {
+    font-size: 1.5rem;
+  }
+  .Image {
+    width: 300px;
+    height: 300px;
+    border-radius: 2rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .Section {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

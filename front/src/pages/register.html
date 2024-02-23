@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
+    <title>Cadastro</title>
+
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="Container">
+      <div class="Content">
+        <section class="Section">
+          <h1 class="Text">Tenha um melhor controle de suas finanças</h1>
+          <img src="../assets/fundo2.png" class="Image" alt="Logo Image" />
+        </section>
+        <section class="Section2">
+          <div class="form-container">
+            <p class="Login">Registrar</p>
+            <form id="user-form">
+              <div class="FormField">
+                <input name="name" type="string" placeholder="Nome" />
+                <p class="error_text" id="name_error"></p>
+              </div>
+              <div class="FormField">
+                <input name="email" type="email" placeholder="E-mail" />
+                <p class="error_text" id="email_error"></p>
+              </div>
+              <div class="FormField">
+                <input name="password" type="password" placeholder="Senha" />
+                <p class="error_text" id="password_error"></p>
+              </div>
+              <div class="FormField">
+                <input
+                  name="password_confirmation"
+                  type="password"
+                  placeholder="Confirmação de Senha"
+                />
+                <p class="error_text" id="password_confirmation_error"></p>
+              </div>
+              <button type="button" class="btn" id="registerButton">
+                Registrar
+              </button>
+            </form>
+            <p class="register">
+              Já tem uma conta?<a href="/login">Faça Login.</a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="module" src="../scripts/register.js"></script>
+  </body>
+</html>

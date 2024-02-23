@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <script src="../utils/validateUserSession.js"></script>
+
+    <title>Contato</title>
+  </head>
+  <body>
+    <header class="ContainerHeader">
+      <div class="ContentHeader">
+        <div>
+          <button class="LogoButton"
+            onclick="window.location.replace('/')"
+            type="button">
+            <img src="../assets/logo.png" alt="Logo" class="LogoButton" />
+          </button>
+         
+        </div>
+        <div>
+          <button
+          class="PageButton"
+          onclick="window.location.replace('/about')"
+          type="button"
+        >
+          Sobre
+        </button>
+          <button class="PageButton" type="button">Contato</button>
+          <button
+            class="PageButton"
+            type="button"
+            onclick="window.location.replace('/categories')"
+          >
+            Categorias
+          </button>
+          <button class="PageButton Logout" onclick="logout()">Logout</button>
+          <button type="button" id="profile" class="profile" onclick="window.location.replace('/profile')"></button>
+
+        </div>
+      </div>
+    </header>
+    <div class="Container">
+      <h1>Você tem alguma dúvida?</h1>
+      <div class="Content">
+        <fieldset class="NameField">
+          <legend>Nome</legend>
+
+          <input type="text" class="NameInput" />
+        </fieldset>
+        <fieldset class="NameField">
+          <legend>E-mail</legend>
+
+          <input type="text" class="EmailInput" />
+        </fieldset>
+
+        <fieldset class="NameField">
+          <legend>Mensagem</legend>
+
+          <textarea name="text" class="TextArea" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <div class="Buttons">
+          <button class="Button Clear" onclick="handleClearForm()">
+            Limpar
+          </button>
+          <button class="Button Send" onclick="handleSubmitForm()">
+            Enviar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/header.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="../scripts/contact.js"></script>
+    <script src="../utils/logout.js"></script>
+  </body>
+</html>

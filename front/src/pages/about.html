@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <script src="../utils/validateUserSession.js"></script>
+
+    <title>Sobre</title>
+  </head>
+  <body>
+    <header class="ContainerHeader">
+      <div class="ContentHeader">
+        <div style="margin-right: 60px;">
+          <button class="LogoButton"
+            onclick="window.location.replace('/')"
+            type="button">
+            <img src="../assets/logo.png" alt="Logo" class="LogoButton" />
+          </button>
+        
+        </div>
+        <div>
+          <button
+          class="PageButton"
+          onclick="window.location.replace('/about')"
+          type="button"
+        >
+          Sobre
+        </button>
+          <button
+            class="PageButton"
+            onclick="window.location.replace('/contact')"
+            type="button"
+          >
+            Contato
+          </button>
+          <button
+            class="PageButton"
+            type="button"
+            onclick="window.location.replace('/categories')"
+          >
+            Categorias
+          </button>
+          <button class="PageButton Logout" onclick="logout()">Logout</button>
+           <button type="button" id="profile" class="profile" onclick="window.location.replace('/profile')"></button>
+
+        </div>
+      </div>
+    </header>
+    <div class="Container">
+      <div class="Profile">
+        <span class="ImageContainer">
+          <img
+            class="Image"
+            src="https://github.com/vitrentin.png"
+            alt="name"
+          />
+        </span>
+
+        <strong class="StrongText"
+          >Nome:
+          <h4 class="Text">Vinícius de Souza Trentin</h4></strong
+        >
+        <strong class="StrongText"
+          >Email:
+          <h4 class="Text">
+            vinicius.trentin@alunos.ifsuldeminas.edu.br
+          </h4></strong
+        >
+        <strong class="StrongText"
+          >Telefone:
+          <h4 class="Text">(19)99424-4920</h4></strong
+        >
+        <strong class="StrongText"
+          >Instituição:
+          <h4 class="Text">IFSULDEMINAS - Campus Poços de Caldas</h4></strong
+        >
+        <strong class="StrongText"
+          >Curso:
+          <h4 class="Text">Engenharia de Computação</h4></strong
+        >
+        <strong class="StrongText"
+          >Período:
+          <h4 class="Text">8º</h4></strong
+        >
+        <strong class="StrongText"
+          >RA:
+          <h4 class="Text">201911020029</h4></strong
+        >
+      </div>
+      <p class="bar"></p>
+      <div class="Profile">
+        <span class="ImageContainer">
+          <img
+            class="Image"
+            src="https://github.com/Caioesqueletron.png"
+            alt="name"
+          />
+        </span>
+
+        <strong class="StrongText"
+          >Nome:
+          <h4 class="Text">Caio Antônio</h4></strong
+        >
+        <strong class="StrongText"
+          >Email:
+          <h4 class="Text">caio.antonio@alunos.ifsuldeminas.edu.br</h4></strong
+        >
+        <strong class="StrongText"
+          >Telefone:
+          <h4 class="Text">(35)9755-5564</h4></strong
+        >
+        <strong class="StrongText"
+          >Instituição:
+          <h4 class="Text">IFSULDEMINAS - Campus Poços de Caldas</h4></strong
+        >
+        <strong class="StrongText"
+          >Curso:
+          <h4 class="Text">Engenharia de Computação</h4></strong
+        >
+        <strong class="StrongText"
+          >Período:
+          <h4 class="Text">8º</h4></strong
+        >
+        <strong class="StrongText"
+          >RA:
+          <h4 class="Text">201911020028</h4></strong
+        >
+      </div>
+    </div>
+    <script src="../scripts/header.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="../utils/logout.js"></script>
+  </body>
+</html>

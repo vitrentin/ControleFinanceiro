@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <title>Login</title>
+
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+      rel="stylesheet"
+    />
+    <script src="../utils/redirectToIndexIfLogged.js" async="true"></script>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="Content">
+        <section class="Section">
+          <h1 class="Text">Tenha um melhor controle de suas finanças</h1>
+          <img src="../assets/fundo2.png" class="Image" alt="Logo Image" />
+        </section>
+        <section class="Section2">
+          <div class="form-container">
+            <p class="Login">Login</p>
+            <form id="user-form">
+              <div class="EmailField">
+                <input name="email" type="email" placeholder="E-mail" />
+                <p class="error_text" id="email_error"></p>
+              </div>
+              <div class="PasswordField">
+                <input name="password" type="password" placeholder="Senha" />
+                <p class="error_text" id="password_error"></p>
+              </div>
+              <button
+                type="button"
+                class="btn"
+                id="submitButton"
+              >
+                Login
+              </button>
+            </form>
+            <p class="register">
+              Ainda não tem uma conta?<a href="/register">Inscreva-se agora.</a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="module" src="../scripts/login.js"></script>
+  </body>
+</html>

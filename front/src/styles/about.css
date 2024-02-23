@@ -1,0 +1,88 @@
+.LogoButton {
+  background: transparent;
+  border: 0;
+  width: 8rem;
+  height: 5rem;
+  margin-top: 20px;
+}
+
+.Container {
+  max-width: 1120px;
+  margin: -100px auto 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+}
+.ContainerHeader {
+  background: #3c1f8a;
+  max-height: 200px;
+}
+
+.Profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  max-width: 500px;
+}
+
+.ImageContainer:first-child {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.Text {
+  line-height: 25px;
+  display: inline;
+  color: #5213ff;
+}
+
+.StrongText {
+  font-size: 1.15rem;
+  color: #10a56f;
+}
+
+.bar {
+  content: "";
+  width: 2px;
+  margin-top: 200px;
+  background-color: #3c1f8a;
+}
+
+@media (max-width: 0px) {
+  .Container {
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bar {
+    height: 80vw;
+    margin: 50px;
+  }
+}
+
+
+@media (max-width: 150px) {
+  .Container {
+    margin: 0 auto 0 auto;
+  }
+
+  .StrongText {
+    font-size: 0.875rem;
+  }
+}

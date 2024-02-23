@@ -1,0 +1,121 @@
+.ContainerHeader {
+  background: #3c1f8a;
+  max-height: 100px;
+}
+
+.LogoButton {
+  background: transparent;
+  border: 0;
+  width: 8rem;
+  height: 5rem;
+  margin-top: 20px;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: -60px;
+}
+
+.Container h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.Content {
+  max-width: 300px;
+}
+
+.NameField {
+  margin-top: 20px;
+}
+
+.NameField input {
+  border: none;
+  background: transparent;
+  height: 35px;
+  font-size: 1.15rem;
+  padding: 15px;
+}
+
+.NameField textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.NameField legend {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.NameField textarea {
+  border: none;
+  background: transparent;
+  font-size: 1.15rem;
+  padding: 15px;
+  width: 300px;
+  height: 200px;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-top: 5px;
+}
+
+.Button {
+  font-size: 1rem;
+  color: #fff;
+  border: 0;
+  padding: 0 1rem;
+  border-radius: 0.25rem;
+  height: 2rem;
+  font-size: 0.875rem;
+
+  transition: filter 0.2s;
+}
+
+.Clear {
+  background: rgb(233, 54, 54);
+  margin-bottom: 20px;
+}
+
+.Send {
+  background: #3c1f8a;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.Button:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 400px) {
+  .Container h1 {
+    font-size: 1.5rem;
+  }
+  .NameField textarea {
+    width: 200px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 300px) {
+  .NameField textarea {
+    width: 200px;
+  }
+
+  .Container h1 {
+    font-size: 1.25rem;
+  }
+
+  .ContentHeader {
+    height: 200px;
+  }
+}
